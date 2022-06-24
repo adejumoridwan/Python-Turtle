@@ -31,5 +31,3 @@ while n <= 100:
 u = input("Would you like me to draw a shape? Type yes or no: ")
 if u == "yes":
     t.circle(50)
-
-#among us
