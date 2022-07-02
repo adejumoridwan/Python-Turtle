@@ -50,7 +50,7 @@ for i in range(20):
         player_one_turn = input("Press 'Enter' to roll the die")
         die_outcome = random.choice(die)
         print("The result of the die roll is: ")
-        print("die_outcome")
+        print(die_outcome)
         print("The number of steps will be: ")
         print(20*die_outcome)
         player_one.fd(20*die_outcome)
