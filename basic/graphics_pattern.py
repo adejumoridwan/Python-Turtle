@@ -10,5 +10,5 @@ for i in range(200):
     pen.color(list1[i%5])#to select different colour from the list
     pen.pensize(i/10)# pen not to go overboard
     pen.forward(i) #move forward
-    pen.left(59) # turn pen to angle 59
+    pen.left(59) # turn pen to angle 59 (p)
 

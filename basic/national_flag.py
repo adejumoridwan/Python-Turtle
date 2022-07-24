@@ -1,35 +1,41 @@
 import turtle
-def rectangle(color):
-    t.begin_fill()
-    t.fillcolor(color)
-    for i in range(2):
-        t.forward(400)
-        t.right(90)
-        t.forward(100)
-        t.right(90)
-    t.end_fill()
 
-t=turtle.Turtle()
-turtle.screensize(1100,1100)
+pen = turtle.Turtle()
+#turtle.screensize(1100,1100)
 turtle.title("National Flag Of Nigeria")
-t.up()
-t.pensize(4)
-t.goto(0,-300)
-t.down()
-t.goto(0,400)
+
+#draw a coloured rectangle
+def rectangle(color):
+    pen.begin_fill()
+    pen.fillcolor(color)
+    for i in range(2):
+        pen.forward(300)
+        pen.right(90)
+        pen.forward(100)
+        pen.right(90)
+    pen.end_fill()
+
+#draw the pole
+pen.up()
+pen.pensize(4)
+pen.goto(0,-300)
+pen.down()
+pen.goto(0,300)
+
+#Draw uppermost green
 rectangle("Green")
 
-t.goto(0,300)
-t.forward(200)
-t.color("black")
-t.forward(200)
-t.right(90)
-t.forward(100)
-t.right(90)
-t.forward(400)
-t.right(90)
-t.forward(100)
-t.right(90)
-t.goto(0,200)
+#Draw white part
+pen.right(90)
+pen.forward(100)
+pen.left(90)
+rectangle("white")
+
+#draw the green part
+pen.right(90)
+pen.forward(100)
+pen.left(90)
 rectangle("green")
+
+pen.hideturtle()
 

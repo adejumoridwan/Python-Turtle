@@ -2,34 +2,18 @@
 import turtle
 
 # create the turtle screen using an object---------------------------
-s = turtle.getscreen()
+screen = turtle.getscreen()
 
 # create the turtle pen--------------------------------------------
-t = turtle.Turtle()
+pen = turtle.Turtle()
 
-t.color('red', 'yellow')
-t.begin_fill()
+turtle.bgcolor("black")
+
+pen.color('red', 'yellow')
+pen.begin_fill()
 while True:
-    t.forward(200)
-    t.left(170)
-    if abs(t.pos()) < 1:
+    pen.forward(200)
+    pen.left(170)
+    if abs(pen.pos()) < 1:
         break
-t.end_fill()
-t.done()
-
-
-# import turtle library------------------------------------
-import turtle
-
-# create the turtle screen using an object---------------------------
-s = turtle.getscreen()
-
-# create the turtle pen--------------------------------------------
-t = turtle.Turtle()
-
-t.color('red', 'yellow')
-t.begin_fill()
-t.forward(200)
-t.left(170)
-t.end_fill()
-t.done()
+pen.end_fill()
