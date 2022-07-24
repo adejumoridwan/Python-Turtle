@@ -45,7 +45,7 @@ turtle.title()
 # change the turtle size--------------------------------
 t.shapesize()
 
-# changing the pen size(line thichness)-----------------------------------
+# changing the pen size(line thickness)-----------------------------------
 t.pensize(0)
 t.forward(30)
 

@@ -14,9 +14,12 @@ import turtle
 screen = turtle.getscreen()
 pen = turtle.Turtle()
 
-for angle in range(0, 360, 5):
-    pen.setheading(angle)
-    pen.forward(100)
-    pen.write(str(angle) + '😎')
-    pen.backward(100)
+colour = ["Red", "Blue", "Green"]
+
+for colours in colour:
+    for angle in range(0, 360, 5):
+        pen.color(colours)
+        pen.setheading(angle)
+        pen.forward(100 + )
+        pen.backward(100)
 

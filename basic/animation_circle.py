@@ -7,5 +7,5 @@ turtle.color("red")
 turtle.speed(0)
 turtle.hideturtle()
 for i in range(100):
-    turtle.circle(i*2)
+    turtle.circle(i)
     turtle._rotate(5)

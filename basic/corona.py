@@ -1,24 +1,31 @@
 import turtle
-corona = turtle.Turtle()
-s=turtle.Screen()
-turtle.screensize(1400,1400)
-corona.pencolor("red")
-corona.write("Stay Home Stay Safe ",'false','center',font=('Showcard gothic',40))
-s.bgcolor("black")
-corona.pencolor("dark green")
-corona.pensize(2)
-Python=0
-CplusPlus=0
-corona.speed(0)
-corona.penup()
-corona.goto(0,250)
-corona.pendown()
+
+pen = turtle.Turtle()
+screen = turtle.Screen()
+
+#turtle.screensize(1400,1400)
+screen.bgcolor("black")
+pen.pencolor("dark green")
+pen.pensize(2)
+
+Distance=0
+Angle=0
+
+pen.speed(0)
+pen.penup()
+pen.goto(0,250)
+pen.pendown()
+
 while True:
-    corona.forward(Python)
-    corona.right(CplusPlus)
-    Python+=3
-    CplusPlus+=1
-    if CplusPlus==210:
+    pen.forward(Distance)
+    pen.right(Angle)
+    Distance+=3
+    Angle+=1
+    if Angle==210:
         break
-    corona.hideturtle()
-turtle.done()
+    #pen.hideturtle()
+
+
+pen.pencolor("red")
+pen.write("Stay Home Stay Safe ",'false','center',font=('Showcard gothic',40))
+

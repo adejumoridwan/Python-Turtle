@@ -1,10 +1,35 @@
-from turtle import *
-color('red', 'yellow')
-begin_fill()
+# import turtle library------------------------------------
+import turtle
+
+# create the turtle screen using an object---------------------------
+s = turtle.getscreen()
+
+# create the turtle pen--------------------------------------------
+t = turtle.Turtle()
+
+t.color('red', 'yellow')
+t.begin_fill()
 while True:
-    forward(200)
-    left(170)
-    if abs(pos()) < 1:
+    t.forward(200)
+    t.left(170)
+    if abs(t.pos()) < 1:
         break
-end_fill()
-done()
+t.end_fill()
+t.done()
+
+
+# import turtle library------------------------------------
+import turtle
+
+# create the turtle screen using an object---------------------------
+s = turtle.getscreen()
+
+# create the turtle pen--------------------------------------------
+t = turtle.Turtle()
+
+t.color('red', 'yellow')
+t.begin_fill()
+t.forward(200)
+t.left(170)
+t.end_fill()
+t.done()
